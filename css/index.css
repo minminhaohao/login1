@@ -7,6 +7,18 @@
 	height: 120px;
 	border:solid black 1px;
 }
+#header ul{
+	width: 960px;
+	height: 60px;
+
+	
+}
+#header ul li{
+	list-style: none;
+	float: left;
+	width:160px;
+	height: 60px;
+}
 #left{
 	width: 200px;
 	height: 600px;
@@ -26,4 +38,9 @@
 	height: 50px;
 	border: solid 1px black;
 	clear: both;  /*清除浮动*/
+}
+#bottom p{
+	text-align:center  /*文本居中*/;
+	font-size: 15px;
+
 }
