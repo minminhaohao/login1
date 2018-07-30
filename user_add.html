@@ -1,13 +1,47 @@
 <html>
 <head>
-	<title></title>
+	<title>用户新增</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<style type="text/css">
+		#useradd{
+			width:500px;
+			height: 200px;
+			margin-left:500px;
+			margin-top:60px;
+			border: dotted 1px black;
+		}
+	</style>
 </head>
 <body>
-	<form method="post">
-		username:<input name="username"><br />
-		password:<input name="password"><br />
-		<input type="submit">
+	
+	<div id="useradd">
+		<h1>用户新增</h1>
+		<form method="post">
+		<table>
+			<tr>
+				<td>用户名:</td>
+				<td><input name="username"></td>
+			</tr>
+			<tr>
+				<td>密码:</td>
+				<td><input name="password"></td>
+			</tr>
+			<tr>
+				<td>性别:</td>
+				<td>
+					<select>
+						<option value="女">女</option>
+						<option value="男">男</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="submit" value="提交"></td>
+			</tr>
+		</table>
 	</form>
+	</div>
+	
 </body>
 
 </html>
