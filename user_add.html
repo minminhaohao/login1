@@ -5,12 +5,26 @@
 	<style type="text/css">
 		#useradd{
 			width:500px;
-			height: 300px;
+			height: 360px;
 			margin-left:500px;
 			margin-top:60px;
 			border: dotted 1px black;
+			background-image: url(images/1.JPG);
 		}
+		
 	</style>
+	<script type="text/javascript">
+		
+		
+		function checkusername(){
+			var username= document.getElementByName("username")
+			if(username.val()==null){
+				alert("用户名不为空")
+				
+			}
+		
+		}
+	</script>
 </head>
 <body>
 	
@@ -42,10 +56,10 @@
 			</tr>
 			<tr>
 				<td>家庭地址：</td>
-				<td><textarea></textarea></td>
+				<td><textarea rows="6" cols="50"></textarea></td>
 			</tr>
 			<tr>
-				<td colspan="2"><input type="submit" value="提交"></td>
+				<td colspan="2"><input type="submit" value="提交" onclick="checkusername()"></td>
 			</tr>
 		</table>
 	</form>
